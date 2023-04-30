@@ -15,6 +15,14 @@
 		B698F54B29FEC82B0044359E /* RMCharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B698F54A29FEC82B0044359E /* RMCharacterView.swift */; };
 		B698F54D29FEC85B0044359E /* RMCharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B698F54C29FEC85B0044359E /* RMCharacterViewModel.swift */; };
 		B698F54F29FEC8950044359E /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B698F54E29FEC8950044359E /* Coordinator.swift */; };
+		B698F55329FECB900044359E /* RequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B698F55229FECB900044359E /* RequestService.swift */; };
+		B698F55529FECEFE0044359E /* RMCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B698F55429FECEFE0044359E /* RMCharacter.swift */; };
+		B698F55929FECFAA0044359E /* ServiceBasePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = B698F55829FECFAA0044359E /* ServiceBasePath.swift */; };
+		B698F55C29FED0290044359E /* ServiceEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B698F55B29FED0290044359E /* ServiceEndpoint.swift */; };
+		B698F55F29FED1010044359E /* ServiceParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = B698F55E29FED1010044359E /* ServiceParam.swift */; };
+		B698F56129FED1700044359E /* Worker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B698F56029FED1700044359E /* Worker.swift */; };
+		B698F56329FED8280044359E /* RMLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B698F56229FED8280044359E /* RMLocation.swift */; };
+		B698F56529FED9A60044359E /* RMEpisode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B698F56429FED9A60044359E /* RMEpisode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +36,14 @@
 		B698F54A29FEC82B0044359E /* RMCharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterView.swift; sourceTree = "<group>"; };
 		B698F54C29FEC85B0044359E /* RMCharacterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterViewModel.swift; sourceTree = "<group>"; };
 		B698F54E29FEC8950044359E /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		B698F55229FECB900044359E /* RequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestService.swift; sourceTree = "<group>"; };
+		B698F55429FECEFE0044359E /* RMCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacter.swift; sourceTree = "<group>"; };
+		B698F55829FECFAA0044359E /* ServiceBasePath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceBasePath.swift; sourceTree = "<group>"; };
+		B698F55B29FED0290044359E /* ServiceEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceEndpoint.swift; sourceTree = "<group>"; };
+		B698F55E29FED1010044359E /* ServiceParam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceParam.swift; sourceTree = "<group>"; };
+		B698F56029FED1700044359E /* Worker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Worker.swift; sourceTree = "<group>"; };
+		B698F56229FED8280044359E /* RMLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMLocation.swift; sourceTree = "<group>"; };
+		B698F56429FED9A60044359E /* RMEpisode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMEpisode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +91,12 @@
 			children = (
 				B698F54829FEC7DC0044359E /* Controllers */,
 				B698F54729FEC7D30044359E /* Coordinator */,
+				B698F55029FECB610044359E /* Model */,
+				B698F55129FECB690044359E /* RequestService */,
+				B698F55729FECF8A0044359E /* ServiceBasePath */,
+				B698F55A29FED0030044359E /* ServiceEndpoint */,
+				B698F55D29FED0E60044359E /* ServiceParam */,
+				B698F55629FECF7D0044359E /* Worker */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -103,6 +125,56 @@
 				B698F54C29FEC85B0044359E /* RMCharacterViewModel.swift */,
 			);
 			path = RMCharacter;
+			sourceTree = "<group>";
+		};
+		B698F55029FECB610044359E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B698F55429FECEFE0044359E /* RMCharacter.swift */,
+				B698F56229FED8280044359E /* RMLocation.swift */,
+				B698F56429FED9A60044359E /* RMEpisode.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B698F55129FECB690044359E /* RequestService */ = {
+			isa = PBXGroup;
+			children = (
+				B698F55229FECB900044359E /* RequestService.swift */,
+			);
+			path = RequestService;
+			sourceTree = "<group>";
+		};
+		B698F55629FECF7D0044359E /* Worker */ = {
+			isa = PBXGroup;
+			children = (
+				B698F56029FED1700044359E /* Worker.swift */,
+			);
+			path = Worker;
+			sourceTree = "<group>";
+		};
+		B698F55729FECF8A0044359E /* ServiceBasePath */ = {
+			isa = PBXGroup;
+			children = (
+				B698F55829FECFAA0044359E /* ServiceBasePath.swift */,
+			);
+			path = ServiceBasePath;
+			sourceTree = "<group>";
+		};
+		B698F55A29FED0030044359E /* ServiceEndpoint */ = {
+			isa = PBXGroup;
+			children = (
+				B698F55B29FED0290044359E /* ServiceEndpoint.swift */,
+			);
+			path = ServiceEndpoint;
+			sourceTree = "<group>";
+		};
+		B698F55D29FED0E60044359E /* ServiceParam */ = {
+			isa = PBXGroup;
+			children = (
+				B698F55E29FED1010044359E /* ServiceParam.swift */,
+			);
+			path = ServiceParam;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,10 +247,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B698F55529FECEFE0044359E /* RMCharacter.swift in Sources */,
+				B698F56129FED1700044359E /* Worker.swift in Sources */,
+				B698F56529FED9A60044359E /* RMEpisode.swift in Sources */,
 				B698F53729FEC6CA0044359E /* RMCharacterViewController.swift in Sources */,
+				B698F55C29FED0290044359E /* ServiceEndpoint.swift in Sources */,
 				B698F53329FEC6CA0044359E /* AppDelegate.swift in Sources */,
+				B698F55329FECB900044359E /* RequestService.swift in Sources */,
+				B698F56329FED8280044359E /* RMLocation.swift in Sources */,
 				B698F54F29FEC8950044359E /* Coordinator.swift in Sources */,
 				B698F53529FEC6CA0044359E /* SceneDelegate.swift in Sources */,
+				B698F55F29FED1010044359E /* ServiceParam.swift in Sources */,
+				B698F55929FECFAA0044359E /* ServiceBasePath.swift in Sources */,
 				B698F54B29FEC82B0044359E /* RMCharacterView.swift in Sources */,
 				B698F54D29FEC85B0044359E /* RMCharacterViewModel.swift in Sources */,
 			);
