@@ -62,5 +62,24 @@ extension RMCharacterViewController: UICollectionViewDelegate, UICollectionViewD
         }
         return UICollectionViewCell()
     }
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        if indexPath.item == viewModelRMCharacter.newRMCharacter.count - 8 && indexPath.item != viewModelRMCharacter.totalCharacter {
+            viewModelRMCharacter.addPage()
+            viewRMCharacter.loading.startAnimating()
+            viewModelRMCharacter.requestAddRMCharacterViewModel { [weak self] success in
+                guard let self = self else { return }
+                DispatchQueue.main.async {
+                    self.viewRMCharacter.loading.stopAnimating()
+                }
+                if success {
+                    self.viewModelRMCharacter.loadingRequest = false
+                    self.viewRMCharacter.myCollectionView.reloadData()
+                } else {
+                    print("Erro Request")
+                }
+            }
+        }
+    }
 }
 
