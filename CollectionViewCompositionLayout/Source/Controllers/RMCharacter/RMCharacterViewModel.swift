@@ -27,7 +27,7 @@ class RMCharacterViewModel: NSObject {
         currentPage = currentPage + 1
     }
     
-    func cellForItensRMCharacter(indexPath: IndexPath)-> Result? {
+    func cellForItensRMCharacter(indexPath: IndexPath)-> Result {
         return rmCharacter[indexPath.item]
     }
     

@@ -51,6 +51,7 @@ class RMCharacterViewController: UIViewController {
 }
 
 extension RMCharacterViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return viewModelRMCharacter.numberOfItemRMCharacter
     }
@@ -61,6 +62,11 @@ extension RMCharacterViewController: UICollectionViewDelegate, UICollectionViewD
             return cell
         }
         return UICollectionViewCell()
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let coordinator = Coordinator(navigationController: navigationController)
+        coordinator.startRMCharacterDetail(detail: viewModelRMCharacter.cellForItensRMCharacter(indexPath: indexPath))
     }
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
