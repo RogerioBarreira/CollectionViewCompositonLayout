@@ -22,4 +22,11 @@ class Coordinator: NSObject {
         let viewController = RMCharacterViewController()
         self.navigationController.pushViewController(viewController, animated: true)
     }
+    
+    func startRMCharacterDetail(detail: Result) {
+        let viewModel = RMCharacterDetailViewModel(rmCharacterDetail: detail)
+        let viewController = RMCharacterDetailViewController(viewModelRMCharacterDetail: viewModel)
+        viewController.viewModelRMCharacterDetail.getDetailRMCharacter(detail: detail)
+        self.navigationController.pushViewController(viewController, animated: true)
+    }
 }

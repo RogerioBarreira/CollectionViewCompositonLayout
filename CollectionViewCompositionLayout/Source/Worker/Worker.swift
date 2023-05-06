@@ -8,6 +8,7 @@
 import Foundation
 
 class Worker: NSObject {
+    private var rmEpisode: RMEpisode?
     private var rmCharacter: RMCharacter?
     private let requestService = RequestService()
     
@@ -29,4 +30,23 @@ class Worker: NSObject {
             }
         }
     }
+    
+//    func workerRMEpisode(page: Int = 0, completion: @escaping (RMEpisode?, Bool)-> Void) {
+//        
+//        let basePath = ServiceBasePath.basePath
+//        let endPoint = EndPointType.episode.rawValue
+//        let param = ParamType.page.rawValue
+//        let url = "\(basePath)\(endPoint)\(param)\(page)"
+//        
+//        requestService.requestService(urlString: url, method: .get, custom: RMEpisode.self) { [weak self] rmEpisode, success in
+//            guard let self  = self else { return }
+//            switch success {
+//            case true:
+//                self.rmEpisode = rmEpisode
+//                completion(rmEpisode, true)
+//            case false:
+//                completion(nil, false)
+//            }
+//        }
+//    }
 }
