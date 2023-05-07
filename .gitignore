@@ -99,3 +99,19 @@ CollectionViewCompositionLayout/Pods/Target Support Files/Pods-CollectionViewCom
 CollectionViewCompositionLayout/Pods/Target Support Files/Pods-CollectionViewCompositionLayout/Pods-CollectionViewCompositionLayout-frameworks-Release-output-files.xcfilelist
 CollectionViewCompositionLayout/Pods/Target Support Files/Pods-CollectionViewCompositionLayout/Pods-CollectionViewCompositionLayout-frameworks.sh
 CollectionViewCompositionLayout/Pods/Target Support Files/Pods-CollectionViewCompositionLayout/Pods-CollectionViewCompositionLayout.modulemap
+*.
+Podfile
+Podfile.lock
+IDEWorkspaceChecks.plist
+contents.xcworkspacedata
+Manifest.lock
+LICENSE
+README.md
+CacheSerializer.swift
+DiskStorage.swift
+FormatIndicatedCacheSerializer.swift
+*.swift
+*.pbxproj
+*.plist
+*.h
+*.xcconfig
